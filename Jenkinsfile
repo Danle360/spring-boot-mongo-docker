@@ -1,4 +1,4 @@
-node{
+node('agent-slave'){
      
     stage('SCM Checkout'){
         git credentialsId: 'GIT_CREDENTIALS', url:  'https://github.com/Danle360/spring-boot-mongo-docker.git',branch: 'master'
