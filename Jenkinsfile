@@ -29,12 +29,12 @@ node('agent-slave'){
          kubeconfigId: 'KUBERNATES_CONFIG',
          enableConfigSubstitution: true
         )
-     }
+     }**/
 	 
 	  
       stage("Deploy To Kuberates Cluster"){
         sh 'kubectl apply -f springBootMongo.yml'
-      } **/
+      } 
      
 }
 
