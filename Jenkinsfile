@@ -22,7 +22,7 @@ node{
         }
         sh 'docker push danle360/spring-boot-mongo'
      }
-     
+     /**
      stage("Deploy To Kuberates Cluster"){
        kubernetesDeploy(
          configs: 'springBootMongo.yml', 
@@ -31,7 +31,7 @@ node{
         )
      }
 	 
-	  /**
+	  
       stage("Deploy To Kuberates Cluster"){
         sh 'kubectl apply -f springBootMongo.yml'
       } **/
